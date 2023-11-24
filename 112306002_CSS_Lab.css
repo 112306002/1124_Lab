@@ -1,0 +1,73 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text color (dark gray) */
+    background-color: #f0f0f0; /* Background color (light gray) */
+    padding-left: 20px; /* Add left padding to shift everything to the right */
+}
+
+h1 {
+    font-family: "Verdana", sans-serif;
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+ul.navbar {
+    position: relative;
+    top: 1em;
+    left: 2em;
+    width: 10em;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    width: 15em;
+}
+
+.navbar li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Styles for screen media type */
+@media all {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        font-size: 14px;
+    }
+}
+
+/* Styles for print media type */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    h1, p, .navbar li a {
+        color: black;
+    }
+}
